@@ -1,48 +1,13 @@
-This project is a Streamlit-based web app that uses a Genetic Algorithm to automatically generate conflict-free class timetables. It ensures constraints such as subject limits, room availability, and staff conflicts are strictly followed.
+![diagramatic representation](https://github.com/shreeharib/RagBased-pdfInteraction-chatbot/assets/107598445/e544a27a-92dc-457a-8a95-370fb7815d35)
+This is a RAG-based LLM model which integrates with multiple PDF documents, enabling dynamic interaction and exploration. Leveraging Google Gen AI Embeddings and FAISS Vector Store, we transform raw document text into semantic vectors, facilitating rapid information retrieval and enhancing search efficiency. Deployed via Streamlit, this intuitive and accessible interface empowers users to effortlessly navigate complex documentation sets, maximizing comprehension and unlocking valuable insights.
 
-Features
-Upload custom Excel files: Course, Staff, Students, and Room data.
+![Homepag](https://github.com/shreeharib/RagBased-pdfInteraction-chatbot/assets/107598445/00fb12fc-8d61-4e93-8d43-5c7a010d484e)
 
-Generate a conflict-free class timetable using AI.
+![outpupga](https://github.com/shreeharib/RagBased-pdfInteraction-chatbot/assets/107598445/15f811c0-fe1e-49be-875c-8d1869ce989d)
 
-Automatically avoid:
-Room clashes
-Staff schedule conflicts
-Over-allocation of subjects
-Back-to-back duplicate subjects
-Export the generated timetable to a PDF.
+## How to run this?
 
-Required Excel Files
-You must upload 4 Excel files to generate the timetable. Below are the required formats and column suggestions:
-
-1. Course.xlsx
-Purpose: Contains subject and course mapping info.
-Suggested Columns:
-Class: e.g., MCA1A, MCA2B
-
-Subject Code: e.g., CS101
-Subject Name: e.g., Data Structures
-Faculty: e.g., Dr. A Kumar
-Type: Theory or Lab
-Max Hours/Week: e.g., 4
-
-2. Staff.xlsx
-Purpose: Contains staff details.
-Suggested Columns:
-Faculty Name: e.g., Dr. A Kumar
-Department: e.g., Computer Science
-Max Load: e.g., 16 hours/week
-
-3. Students.xlsx
-Purpose: Class list and student distribution.
-Suggested Columns:
-Class: e.g., MCA1A
-Student Count: e.g., 40
-
-4. Room.xlsx
-Purpose: List of available rooms and lab facilities.
-Suggested Columns:
-Room Number: e.g., CS101
-Type: Theory or Lab
-Capacity: e.g., 60
-
+    1. clone the repo to your local system
+    2. get into the working directory using cd -command
+    3. install the requirements correctly as mentioned in the requirements.txt file
+    4. Then go to the terminal and use this command "streamlit run chatpdf1.py" to run the app in your local host.
